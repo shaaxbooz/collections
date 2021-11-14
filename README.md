@@ -1,2 +1,2 @@
 # collections
-demo https://diskret-tuzilmalari.netlify.app/
+<a href="https://diskret-tuzilmalari.netlify.app/" > Demo  </a>
