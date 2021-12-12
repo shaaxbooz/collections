@@ -66,6 +66,12 @@ export default defineComponent({
 .info-text {
   width: 500px;
 
+  @media (max-width: 768px) {
+    text-align: justify-all;
+    width: 100%;
+
+  }
+
   .text__title{
     font-size: 24px;
     font-weight: bold;

@@ -79,7 +79,7 @@ export default defineComponent({
 <style lang="scss" scoped>
 .q-footer {
 	@media (min-width: 768px) {
-		display: none
+		display: none;
 	}
 }
 

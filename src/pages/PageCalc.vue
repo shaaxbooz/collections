@@ -411,6 +411,44 @@ export default defineComponent({
 <style lang="scss" scoped>
 
   .calc {
+    @media (max-width: 768px) {
+      h5 {
+        font-size: 16px;
+      }
+
+      input {
+        width: 10px;
+        height: 5px;
+        font-size: 10px;
+        padding-left: 5px;
+      }
+      .create__delete button {
+        padding: 0px 5px;
+        border: 0;
+        font-size: 10px;
+        border-radius: 4px;
+        color: white;
+      }
+
+      .calc__actions {
+        margin: 0 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .calc__actions button {
+        font-size: 12px;
+        padding: 1px 5px;
+      }
+
+      .calc__result {
+        height: 170px !important;
+        overflow: hidden;
+      }
+    }
 
     .calc__input {
       display: flex;
@@ -429,9 +467,21 @@ export default defineComponent({
         display: flex;
         gap: 5px;
 
+        :nth-child(1) {
+          background: #C10015;
+        }
+
+        :nth-child(2) {
+          background: #21BA45;
+        }
+
         button {
+          padding: 0px 9px;
+          border: 0;
           font-size: 18px;
-          padding: 0 8px;
+          border-radius: 8px;
+          color: white;
+
         }
       }
     }
@@ -440,6 +490,7 @@ export default defineComponent({
       display: flex;
       flex-direction: row;
       gap: 15px;
+      flex-wrap: wrap;
 
       button {
         font-size: 18px;
